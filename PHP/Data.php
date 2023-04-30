@@ -15,7 +15,7 @@ $sql = "SELECT COUNT(*) AS SUM FROM users";
 $result = mysqli_query($conn, $sql);
 
 if(mysqli_num_rows($result) > 0){
-    $row = mysqli_fetch_array($result)
+    $row = mysqli_fetch_array($result);
     echo "Jumlah Data Adalah " . $row["SUM"];
 } 
 
